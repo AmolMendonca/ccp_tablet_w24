@@ -1,0 +1,79 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 16px;
+}
+
+a:hover {
+    color: #a9b2b9;
+  }
+  a {
+    color: #000000;
+  }
+
+.byline {
+    font-style: italic;
+}
+
+h1 {
+    text-align: center;
+    font-size: 36px;
+    line-height: 10px;  
+}
+
+cite, em {
+    font-style: italic;
+}
+
+.primary-nav {
+    font-size: 17px;
+    font-weight: 400;
+}
+
+p {
+    text-align: center;
+}
+
+.sub-title {
+    text-align: center;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px; 
+    padding: 10px; 
+    width: 100%;
+
+}
+
+a.current-page {
+    color: #005A9C;
+    font-weight: bold;
+    text-decoration: underline;
+    background-color: rgba(0, 90, 156, 0.1);
+    padding: 2px 5px;
+    border-radius: 5px;
+}
+
+a.current-page:focus {
+    outline: 3px solid #005A9C;
+    outline-offset: 2px;
+}
+
+.skip-link {
+    position: absolute;
+    left: -999px;
+    top: -999px;
+}
+
+.skip-link:focus {
+    left: 0;
+    top: 0;
+    width: auto;
+    height: auto;
+    padding: 10px;
+    background: #FFFFFF; /* Choose a background color that fits your site's design */
+    color: #000000; /* Choose a text color that contrasts well with the background */
+    text-decoration: none;
+    z-index: 100; /* Ensure it is above other content */
+}
